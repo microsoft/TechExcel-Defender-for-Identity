@@ -1,10 +1,10 @@
-title: Fabric w/ Azure Databricks
-description: This lab showcases Modern Analytics with Microsoft Fabric and Azure Databricks, featuring a cost-effective, performance-optimized, and cloud-native Analytics solution pattern. 
+title: TechExcel Defender for Identity
+description: This lab showcases the deployment and the threat detection and investigation capabilities of Microsoft Defender for Identity. 
 theme: just-the-docs
 
 aux_links:
-  "TechBoost Fabric wth Databricks for Data Analytics": 
-    - "https://github.com/microsoft/TechBoost-Fabric-with-Databricks-for-Data-Analytics"
+  "TechExcel Defender for Identity": 
+    - "https://github.com/microsoft/TechExcel-Defender-for-Identity/"
 
 callouts_level: quiet # or loud
 callouts:
