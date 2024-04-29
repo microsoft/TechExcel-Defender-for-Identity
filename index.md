@@ -4,7 +4,7 @@ layout: home
 nav_order: 1
 ---
 
-# TTechExcel: Defender for Identity (level 300 / CSU) lab
+# TechExcel: Defender for Identity (level 300 / CSU) lab
 
 **The estimated time to complete this lab is ??? minutes.**
 
