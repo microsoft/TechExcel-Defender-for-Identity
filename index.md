@@ -6,15 +6,44 @@ nav_order: 1
 
 # TechExcel: Defender for Identity (level 300 / CSU) lab
 
-**The estimated time to complete this lab is ??? minutes.**
+## Day 1
 
-TBD lab intro
+This lab provides information and practice for deploying Microsoft Defender for Identity (MDI) and using MDI to detect and investigate attacks.
 
-## Exercises
+During the first day of the lab, you'll install and configure the Microsoft Defender for Identity sensor. You'll learn how to download and install the sensor software on a designated server, configure the sensor to start collecting and sending data to the Defender for Identity portal, and validate the installation to ensure proper functionality, enhancing your organization's ability to detect and respond to identity-based threats.
 
-This lab has exercises on:
+The tasks you'll perform during the first day include:
 
-- TBD list of exercises
+- Verify connectivity to the Defender for Identity service.
+- Download the Defender for Identity sensor.
+- Install the Defender for Identity sensor, from command line and using script. 
+- Configure the Defender for Identity sensor to start receiving data (post-deployment configuration, including audit policies for Windows.
+- Validate the installation.
+
+Estimated time to complete Day 1: **90 minutes**
+
+**Before you begin**
+
+To complete the exercises in this lab, you'll need an Azure tenant subscription and Microsoft 365 account.
+
+## Day 2
+
+During Day 2 of this lab, you'll execute, detect, and investigate attacks. You'll learn to manage and respond to security alerts using Microsoft Defender for Identity, and to identify various alert types triggered by specific attack behaviors. You'll use Defender for Identity for accessing and analyzing threat intelligence data, and the lab explores the relationship between this data and the MITRE ATT&CK framework.
+
+The tasks you'll perform on the second day include:
+
+- Execute, detect, and investigate Reconnaissance and discovery attacks.
+- Execute, detect, and investigate Persistence and privilege escalation attacks.
+- Execute, detect, and investigate Credential access attacks.
+- Execute, detect, and investigate Lateral movement attacks.
+- Execute, detect, and investigate other types of attacks.
+
+To successfully test the Defender for Identity detections and simulate attack scenarios, you'll need a test environment configured with enough of a footprint to showcase the attack scenarios. 
+
+The bulk of the configuration was completed during Day 1. Some additional configuration is required to perform the attack scenarios.
+
+Estimated time to complete Day 2:  **120 Minutes**
+
 
 ## Disclaimer
 
