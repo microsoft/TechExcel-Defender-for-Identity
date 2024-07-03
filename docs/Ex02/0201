@@ -1,0 +1,22 @@
+---
+title: '1. Create RDP files'
+layout: default
+nav_order: 1
+parent: 'Day 2: Attack, detect, and investigate'
+---
+
+# Task 2.1: Create RDP files
+
+In this task, you'll download RDP files to connect to each of the three virtual machines that you'll use in the exercises.
+
+1. Open Microsoft Edge, go to **[https://portal.azure.com](https://portal.azure.com)**, then sign in using your **Azure credentials**.
+
+1. On the Azure Portal page in Microsoft Edge, select **Virtual Machines**.
+
+1. Select **WIN5**, and then select **Connect**, and then select **Connect**.
+
+1. On the **Native RDP** tile, select **Download RDP file**, and then in the **Downloads** dialog box, select **Keep**.
+
+1. In the left panel, under **Virtual machines**, select **WIN6**.
+
+1. On the **Native RDP** tile, select **Download RDP file**, and then in the **Downloads** dialog box, select **Keep**.
