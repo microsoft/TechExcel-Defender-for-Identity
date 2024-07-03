@@ -18,6 +18,8 @@ This lab provides information and practice for deploying Microsoft Defender for 
 
 During the first day of this lab, you'll install and configure the Microsoft Defender for Identity sensor. Then, on the second day, you'll execute, detect, and investigate attacks. 
 
+## Exercises
+
 **To successfully complete this lab, you'll need to complete the following tasks:**
 - Verify connectivity to the Defender for Identity service.
 - Download the Defender for Identity sensor.
