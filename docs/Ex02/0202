@@ -1,0 +1,56 @@
+---
+title: '2. Configure the Domain Controller'
+layout: default
+nav_order: 2
+parent: 'Day 2: Attack, detect, and investigate'
+---
+
+# Task 2.2: Configure the Domain Controller
+
+In this task, you'll create the user and group accounts needed to complete the lab exercises.
+
+1. Go to the **Downloads** folder and open the **DC01.rdp** file to connect to the domain controller; sign in using **MSAdmin32** and **Passw0rd12!@** as the password.
+
+1. On the DC01 VM, right-click **Start** and then select **Windows PowerShell (Admin)** to open an elevated PowerShell window.
+
+1. In PowerShell, run the following command:
+
+    ```PowerShell-wrap
+    # Set the variables:
+    $domainComponent = "MSMDI" 
+    
+    # Create users:
+    Net user RonHD Passw0rd12!@ /FULLNAME:"Ron HD" /DOMAIN /add
+    Net user JeffL Passw0rd12!@ /FULLNAME:"Jeff Leatherman" /DOMAIN /add
+    Net user SamiraA Passw0rd12!@ /FULLNAME:"Samira Abbasi" /DOMAIN /add 
+    Net user HoneyTokenTest Passw0rd12!@ /FULLNAME:"HoneyTokenTest" /DOMAIN /add 
+
+    # Add SamiraA to Domain Admins
+    Add-ADGroupMember -Identity "Domain Admins" -Members SamiraA
+    
+    # Create HelpDesk group
+    New-ADGroup -Name HelpDesk -GroupScope Global -GroupCategory Security -Path "DC=$domainComponent,DC=local"
+    
+    #Add RonHD to HelpDesk group
+    Add-ADGroupMember -Identity HelpDesk -Members RonHD
+
+    Invoke-Command -ComputerName WIN5 -ScriptBlock { net localgroup Administrators MSMDI\Jeffl /add }
+    Invoke-Command -ComputerName WIN6 -ScriptBlock { net localgroup Administrators MSMDI\Jeffl /add }
+    ```
+
+1. Create and share a folder to store the tools needed to complete the lab exercises.  
+    In the PowerShell window, run the following command:
+
+    ```PowerShell
+    New-Item -Path "C:\Tools" -ItemType Directory; New-SmbShare -Name 'Tools' -Path 'C:\Tools' -ReadAccess 'Everyone'
+    ```
+
+1. Disable Microsoft Defender Antivirus and create an exclusion for the C:\\Tools folder.  
+    In the PowerShell window, run the following command:
+
+    ```PowerShell-wrap
+    Set-MpPreference -DisableRealtimeMonitoring $true
+    Set-MpPreference -MAPSReporting 0
+    Set-MpPreference -SubmitSamplesConsent 2
+    Add-MpPreference -ExclusionPath 'C:\Tools'
+    ```
