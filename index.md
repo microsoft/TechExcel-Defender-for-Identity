@@ -8,9 +8,14 @@ nav_order: 1
 
 **The estimated time to complete this lab is 210 minutes.**
 
-Humongous’ IT department needs to protect their on-prem datacenters. They want to secure multiple Active Directory Domain Services (AD DS) servers and the systems that rely on these servers for authentication.​
+Humongous’ IT department needs to protect the company's Active Directory environment. They need to leverage signals from Active Directory to help better identify, detect, and investigate advanced threats directed at their organization. The IT department has identified the following requirements:
 
-Brian Stitt, the Vice President of Information Security and Compliance, has engaged with Microsoft and his team to implement MDI in his enterprise. The team has provided you with the information listed throughout the rest of this section and would like assistance in deploying MDI, and then using the product to perform threat detection and investigation.  ​
+- Prevent breaches, using proactive identity security posture assessments
+- Detect threats, using real-time analytics and data intelligence
+- Investigate suspicious activities, using clear, actionable incident information
+- Respond to attacks, using automatic response to compromised identities
+
+Brian Stitt, the Vice President of Information Security and Compliance, has engaged with Microsoft and his team to implement MDI in his enterprise. The team has provided you with the information listed throughout the rest of this section and would like assistance in deploying MDI, and then using the product to perform threat detection and investigation.​
 
 ​The security team of Humongous IT wants to install MDI in their environment and begin using the product right away to protect their systems.​
 
