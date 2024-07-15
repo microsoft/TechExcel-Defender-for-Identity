@@ -17,8 +17,6 @@ Humongous’ IT department needs to protect the company's Active Directory envir
 
 Brian Stitt, the Vice President of Information Security and Compliance, has engaged with Microsoft and his team to implement MDI in his enterprise. The team has provided you with the information listed throughout the rest of this section and would like assistance in deploying MDI, and then using the product to perform threat detection and investigation.​
 
-​The security team of Humongous IT wants to install MDI in their environment and begin using the product right away to protect their systems.​
-
 This lab provides information and practice for deploying Microsoft Defender for Identity (MDI) and using MDI to detect and investigate attacks.
 
 During the first day of this lab, you'll install and configure the Microsoft Defender for Identity sensor. Then, on the second day, you'll execute, detect, and investigate attacks. 
